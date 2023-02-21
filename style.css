@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --body: #22212C;
+    --card: #302F3D;
+    --text-color: #837E9F;    
+    --complementar: #CB92B1;
+}
+
+body {
+    background-color: var(--body);
+}
+
+header {
+    margin-bottom: 1em;
+    color: white;
+}
+
+.containerGeral {
+    width: 30%;
+    background-color: var(--card);
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    border-radius: .5em;
+}
+
+.forms {
+    width: 80%;
+    background-color: var(--complementar);    
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: .5em;    
+        
+    
+}
+
+.formsPesquisar {
+    background-color: var(--complementar);
+    width: 80%;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-between;      
+    
+}
+
+.formsPesquisar input {
+    width: 70%;
+}
+
+.forms input {
+    width: 80%;    
+}
+
+#editarTarefa{
+    display: none;
+}
+
+#todo {
+    display: none;
+}
+
+
+
+.pesquisar {
+    width: 100%;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+
+.forms p, .formsPesquisar p {
+    margin-bottom: .5em;
+    color: white;
+}
+
+.inputButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.filtrar {
+    margin-left: 2em;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--card);      
+    width: 2em;
+    height: 2em;
+    border: none;
+    transition: .5s;
+    border-radius: .3em;
+}
+
+button:hover{
+    border: 1px solid white;
+    transform: scale(1.2)
+}
+
+i {
+    color: white;    
+}
+
+.todo {
+    width: 80%;
+    background-color: var(--complementar);    
+    padding: 1em;    
+    border-radius: .5em;  
+    display: flex;
+    gap: .3em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.todoAlterado {    
+    background-color: white;   
+    
+}
+
+.todo h5 {
+    margin-right: 1em;
+}
+
